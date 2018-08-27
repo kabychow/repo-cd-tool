@@ -9,5 +9,5 @@ s.listen(1)
 while True:
     c, _ = s.accept()
     c.recv(128)
-    os.system('bin/repo sync')
+    os.system('cd /var/www/html && bin/repo sync')
     c.close()
